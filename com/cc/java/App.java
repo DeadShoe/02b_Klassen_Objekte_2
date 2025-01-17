@@ -10,10 +10,10 @@ public class App {
         // output("Blick von aussen: " + cat);
         // output("Blick von innen: " + cat.getInstanceVariable());
 
-        // Werte ausgeben
-        output(cat.firstName);
-        output(cat.furColor);
-        output(Integer.toString(cat.age)); // EXPLIZITE Typkonvertierung
+        // Werte über Getter
+        output(cat.getFirstName());
+        output(cat.getFurColor());
+        output(Integer.toString(cat.getAge())); 
 
 
         output("-----------------------");
@@ -23,9 +23,9 @@ public class App {
         // output("Blick von innen: " + cat2.getInstanceVariable());
 
         // Werte ausgeben
-        output(cat2.firstName);
-        output(cat2.furColor);
-        output(Integer.toString(cat2.age));
+        output(cat2.getFirstName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));
 
     }
 
