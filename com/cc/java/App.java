@@ -4,14 +4,11 @@ public class App {
     
     public static void main(String[] args) {
 
-        Cat cat = new Cat();
+        // Instanziierung + Wertzuweisung
+        Cat cat = new Cat("Grizabella", "white", 29);
+
         // output("Blick von aussen: " + cat);
         // output("Blick von innen: " + cat.getInstanceVariable());
-
-        // Werte zuweisen
-        cat.firstName = "Grizabella";
-        cat.furColor = "white";
-        cat.age = 29;
 
         // Werte ausgeben
         output(cat.firstName);
@@ -21,14 +18,9 @@ public class App {
 
         output("-----------------------");
 
-        Cat cat2 = new Cat();
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
         // output("Blick von aussen: " + cat2);
         // output("Blick von innen: " + cat2.getInstanceVariable());
-
-        // Werte zuweisen
-        cat2.firstName = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 35;
 
         // Werte ausgeben
         output(cat2.firstName);
